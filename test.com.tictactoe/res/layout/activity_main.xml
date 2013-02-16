@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/caption"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="30dp"
+        android:paddingTop="20dp"
+        android:text="@string/start_text"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caption"
+        android:gravity="center" >
+        <Button
+            android:id="@+id/button_topleft"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="gridButtonListener"
+            android:text="@string/default_val" />
+        <Button
+            android:id="@+id/button_topcenter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="gridButtonListener"
+            android:text="@string/default_val" />
+        <Button
+            android:id="@+id/button_topright"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="gridButtonListener"
+            android:text="@string/default_val" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row1"
+        android:gravity="center" >
+        <Button
+            android:id="@+id/button_middleleft"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="gridButtonListener"
+            android:text="@string/default_val" />
+        <Button
+            android:id="@+id/button_middlecenter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="gridButtonListener"
+            android:text="@string/default_val" />
+        <Button
+            android:id="@+id/button_middleright"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="gridButtonListener"
+            android:text="@string/default_val" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row2"
+        android:gravity="center" >
+        <Button
+            android:id="@+id/button_bottomleft"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="gridButtonListener"
+            android:text="@string/default_val" />
+        <Button
+            android:id="@+id/button_bottomcenter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="gridButtonListener"
+            android:text="@string/default_val" />
+        <Button
+            android:id="@+id/button_bottomright"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="gridButtonListener"
+            android:text="@string/default_val" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row3"
+        android:gravity="center"
+        android:paddingTop="50dp" >
+        <Button
+            android:id="@+id/button_startgame"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:onClick="startGameListener"
+            android:text="@string/start_game" />
+    </LinearLayout>
+
+</RelativeLayout>
